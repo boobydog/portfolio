@@ -1,0 +1,10 @@
+{
+    "title":"CONTACT",
+    "id":"contact",
+    "name":"お問い合わせ",
+    "discription":"最後までお読みいただき、ありがとうございました。\n\nご不明な点、ご質問等ございましたら、\n下記お問い合わせフォームよりお問い合わせください。",
+    "discription_eng":" Thank you for reading to the end.\n\nIf you have any questions or concerns, please contact us using the inquiry form below.",
+    "mail":"Mail Address",
+    "form":"Please fill in inquiry",
+    "icon":"./img/mail32px.png"
+}

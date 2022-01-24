@@ -1,0 +1,19 @@
+{
+    "title":"WORKS",
+    "id":"works",
+    "name":"制作物",
+    "items":[
+                {"id":0,
+                 "name":"Portfolio",
+                 "thumbnail_image":"./img/works01.png",
+                 "discrintion_image":"./img/works01.png",
+                 "discription":"詳細説明1"
+                },
+                {"id":1,
+                 "name":"memo-app",
+                 "thumbnail_image":"./img/works01.png",
+                 "discrintion_image":"./img/works01.png",
+                 "discription":"詳細説明2"
+                }
+            ]
+}
