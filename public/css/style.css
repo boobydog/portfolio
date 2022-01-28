@@ -41,6 +41,7 @@ position: fixed;
 }
 
 .menu{
+    z-index:1;
       margin:2%;
       font-size:120%;
       font-family:Arial, Helvetica, sans-serif;
@@ -66,7 +67,7 @@ position: fixed;
 }
 
 .side-menu-background{
-    z-index:2;
+    z-index:1;
     background-color:rgba(255, 255, 255, 0);
     margin:15% 0% 0% 73%;
     position: fixed;
@@ -108,6 +109,7 @@ margin:3%;
 
 .overlay{
         /*　画面全体を覆う設定　*/
+        z-index:2;
           position:fixed;
           top:0;
           left:0;
@@ -123,8 +125,93 @@ margin:3%;
         }
 
 .content{
-            z-index:4;
+            z-index:2;
             width:50%;
             padding: 1em;
             background:#fff;
+            position:relative;
+            border-radius: 20px;
           }
+
+.modal_table{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.modal_tbody{
+    align-items: center;
+    width: 100%;
+}
+
+.modal_tr{
+    align-items:center;
+    vertical-align:top;
+}
+
+.modal_td{
+    text-align: left;
+    width: 50%;
+   
+}
+
+.modal_subtitle{
+    padding: 0% 0% 0% 5%;
+}
+
+.modal_value{
+    padding: 0% 40% 0% 0%;
+}
+
+.modal_left{
+    text-align: left;
+}
+
+.modal_right{
+    text-align: right;
+}
+
+.modal_top{
+    padding: 0% 0% 5% 0%;
+}
+
+.modal_left{
+    padding: 0% 0% 0% 5%;
+}
+.modal_left2{
+    padding: 0% 0% 0% 10%;
+}
+
+.modal_subtitle-h1{
+    font-size:120%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.modal_subtitle-h2{
+    font-size:200%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.modal_subtitle-h3{
+    font-size:100%;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:3%;
+    font-weight: bold;
+}
+
+.modal_subtitle-small{
+    font-size:80%;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:3%;
+    font-weight: bold;
+}
+
+.modal_subtitle-gray{
+    color:rgba(94, 94, 94, 0.363);
+}
+
+.modal_subtitle-black{
+    color:rgba(0, 0, 0, 0.63);
+}

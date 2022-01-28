@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-// import React from 'react';
 import Works from "./json/works.json";
-
-
 
 export const WorkItems = () =>{
 
@@ -18,8 +15,6 @@ export const WorkItems = () =>{
     </span>
     );
 
-
-   
 return (<div id={Works.id}>
             <div class="subtitle-left">
                 <span class="subtitle-h1 subtitle-gray ">{Works.title}</span>
@@ -30,23 +25,38 @@ return (<div id={Works.id}>
 }
 
 const ModalItems = (props) => {
-const  modal = (
-    <div className="modal">
-      <div className="modal-content">
-        <h2>{Works.items[props.valueStatus].name}</h2>
-        <p>{Works.items[props.valueStatus].discription}</p>
-        <div className="close" onClick={props.closeModal}>閉じる</div>
-      </div>
-    </div>
-  );
+
   return ( props.status ? (
           <div className="overlay">
-    <div className="content">
-      <h2>{Works.items[props.valueStatus].name}</h2>
-      <img src={Works.items[props.valueStatus].discrintion_image}  alt={Works.items[props.valueStatus].name}/>
-   
-    {modal}
+    <div className="content">      
+    <img src={Works.items[props.valueStatus].discription_image}  alt={Works.items[props.valueStatus].title}/>
+    <table class="modal_table">
+      <tbody class="modal_tbody">
+      <tr class="modal_tr">
+        <td  class="modal_td  modal_left2">
+
+          <tr class="modal_tr">
+            <td  class="modal_td modal_left">
+            <h2 class ="modal_subtitle-h2  modal_left">{Works.items[props.valueStatus].title}</h2>
+              <h3  class ="modal_subtitle-h3"><span>{Works.items[props.valueStatus].overview_title}</span><span class="modal_subtitle-small modal_subtitle-gray">{Works.items[props.valueStatus].overview_title_eng}</span></h3>
+              <div>{Works.items[props.valueStatus].overview_value}</div>
+              </td>
+              <td>
+                <tr><td class="modal_td modal_left modal_subtitle"><h3><span class="modal_subtitle-h3">{Works.items[props.valueStatus].uselanguage_title}</span><span class="modal_subtitle-small modal_subtitle-gray">{Works.items[props.valueStatus].uselanguage_title_eng}</span></h3></td></tr>
+                <tr><td class="modal_td modal_right modal_value"><span>{Works.items[props.valueStatus].uselanguage_value}</span></td></tr>
+                <tr><td class="modal_td modal_left modal_subtitle"><h3><span class="modal_subtitle-h3">{Works.items[props.valueStatus].workperiod_title}</span><span class="modal_subtitle-small modal_subtitle-gray">{Works.items[props.valueStatus].workperiod_title_eng}</span></h3></td></tr>
+                <tr><td class="modal_td modal_right modal_value"><span>{Works.items[props.valueStatus].workperiod_value}</span></td></tr>
+                <tr><td class="modal_td modal_left modal_subtitle"><h3><span class="modal_subtitle-h3">{Works.items[props.valueStatus].link_title}</span><span class="modal_subtitle-small modal_subtitle-gray">{Works.items[props.valueStatus].link_title_eng}</span></h3></td></tr>
+                <tr><td class="modal_td modal_right modal_value"><a href={Works.items[props.valueStatus].link_value} target={Works.items[props.valueStatus].link_target}>{Works.items[props.valueStatus].link_value}</a></td></tr>
+                </td>
+                </tr>
+                </td>
+                </tr>
+                </tbody>
+                </table>
+        <div className="close" onClick={props.closeModal}>閉じる</div>
     </div>
+    
   </div>):(<></>)
   )
 }

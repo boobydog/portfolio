@@ -4,16 +4,40 @@
     "name":"制作物",
     "items":[
                 {"id":0,
-                 "name":"Portfolio",
+                 "title":"Portfolio",
                  "thumbnail_image":"./img/works01.png",
-                 "discrintion_image":"./img/works01.png",
-                 "discription":"詳細説明1"
+                 "discription_image":"./img/works01.png",
+                 "overview_title":"概要",
+                 "overview_title_eng":"Overview",
+                 "overview_value":"いつでも自分の作品をお見せできるように、\n自身のポートフォリオサイトを作成。\nフロントエンドの作業は経験が浅く新鮮でした。\nデザインを考えることに苦労しました。\nReactを初めて使って作成したサイトです。",
+                 "uselanguage_title":"使用言語",
+                 "uselanguage_title_eng":"Language used",
+                 "uselanguage_value":"HTML/CSS、React",
+                 "workperiod_title":"作業期間",
+                 "workperiod_title_eng":"Work period",
+                 "workperiod_value":"5日",
+                 "link_title":"リンク",
+                 "link_title_eng":"Link",
+                 "link_value":"https://github.com/",
+                 "link_target":"_blank"
                 },
                 {"id":1,
-                 "name":"memo-app",
+                 "title":"memo-app",
                  "thumbnail_image":"./img/works01.png",
-                 "discrintion_image":"./img/works01.png",
-                 "discription":"詳細説明2"
+                 "discription_image":"./img/works01.png",
+                 "overview_title":"概要",
+                 "overview_title_eng":"Overview",
+                 "overview_value":"いつでも自分の作品をお見せできるように、\n自身のポートフォリオサイトを作成。\nフロントエンドの作業は経験が浅く新鮮でした。\nデザインを考えることに苦労しました。\nReactを初めて使って作成したサイトです。",
+                 "uselanguage_title":"使用言語",
+                 "uselanguage_title_eng":"Language used",
+                 "uselanguage_value":"HTML/CSS、React",
+                 "workperiod_title":"作業期間",
+                 "workperiod_title_eng":"Work period",
+                 "workperiod_value":"5日",
+                 "link_title":"リンク",
+                 "link_title_eng":"Link",
+                 "link_value":"https://github.com/",
+                 "link_target":"_blank"
                 }
             ]
 }
