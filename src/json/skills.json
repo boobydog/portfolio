@@ -6,35 +6,47 @@
             {"sub_title":"Frontend",
                 "items":[
                     {"id":1,
-                     "name":"HTML/CSS",
+                     "name":"HTML",
+                     "icon":"img/html32px.png",
                      "rate":4
                     },
                     {"id":2,
-                        "name":"Javascript",
-                        "rate":4
+                        "name":"CSS",
+                        "icon":"img/css32px.png",
+                        "rate":3
                        },
                     {"id":3,
+                        "name":"Javascript",
+                        "icon":"img/js32px.png",
+                        "rate":4
+                       },
+                    {"id":4,
                         "name":"React",
+                        "icon":"img/react32px.png",
                         "rate":2
-                    }      
+                    }        
                 ]
             },
             {"sub_title":"Backend",
                 "items":[
                     {"id":1,
                      "name":"Java",
+                     "icon":"img/java32px.png",
                      "rate":3
                     },
                     {"id":2,
                         "name":"Ruby on Rails",
+                        "icon":"img/rails32px.png",
                         "rate":1
                        },
                     {"id":3,
                         "name":"PHP",
+                        "icon":"img/php32px.png",
                         "rate":1
                     },
                     {"id":4,
-                        "name":"Google Apps Script",
+                        "name":"GAS",
+                        "icon":"img/gas32px.png",
                         "rate":4
                     }           
                 ]
@@ -43,18 +55,22 @@
                 "items":[
                     {"id":1,
                      "name":"Oracle",
+                     "icon":"img/oracle32px.png",
                      "rate":4
                     },
                     {"id":2,
                         "name":"SQL Server",
+                        "icon":"img/sqls32px.png",
                         "rate":5
                        },
                     {"id":3,
                         "name":"My SQL",
+                        "icon":"img/mysql32px.png",
                         "rate":2
                     },
                     {"id":4,
                         "name":"SQLite",
+                        "icon":"img/sqlite32px.png",
                         "rate":2
                     }       
                 ]
@@ -63,18 +79,22 @@
                 "items":[
                     {"id":1,
                      "name":"Backlog",
+                     "icon":"img/b32px.png",
                      "rate":5
                     },
                     {"id":2,
                         "name":"SVN",
+                        "icon":"img/svn32px.png",
                         "rate":5
                        },
                     {"id":3,
-                        "name":"Github",
-                        "rate":2
+                        "name":"Git/Github",
+                        "icon":"img/git32px.png",
+                        "rate":3
                     },
                     {"id":4,
                         "name":"Eclipse",
+                        "icon":"img/eclipse32px.png",
                         "rate":2
                     }       
                 ]

@@ -1,0 +1,37 @@
+{
+    "menu":[
+                {"id":0,
+                 "name":"TOP",
+                 "link":"#top"
+                },
+                {"id":1,
+                 "name":"WORKS",
+                 "link":"#works"
+                },
+                {"id":2,
+                 "name":"SKILLS",
+                 "link":"#skills"
+                },
+                {"id":3,
+                 "name":"ABOUT",
+                 "link":"#about"
+                },
+                {"id":4,
+                 "name":"CONTACT",
+                 "link":"#contact"
+                }
+            ],
+    "snsmenu":[
+                {"id":1,
+                "icon":"./img/GitHub-Mark-32px.png",
+                 "name":"Github",
+                 "link":"https://github.com/boobydog"
+                },
+                {"id":2,
+                "icon":"./img/qiita32px.png",
+                 "name":"Qiita",
+                 "link":"https://qiita.com/masa_ruru"
+                }
+            ]
+
+}
