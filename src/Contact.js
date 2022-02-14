@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {SendContact} from './SendContact';
 import Contact from "./json/contact.json";
+import ReactLoading from 'react-loading';
 // import axios from 'axios';
 export const ContactItems = () =>{
 
@@ -40,10 +41,10 @@ const ContactModal = (props) =>{
  const [forms, setForms] = useState({
   name: "",
   mailAddress: "",
-  body:"",
-  loading: true,
+  body:""
 })
-
+//ローディング状態用useState
+const [isLoad,setIsLoad] = useState(false);
 //入力チェック用useState
 const [isEmpty, setIsEmpty] = useState(false)
 //メール入力チェック用useState
@@ -63,15 +64,19 @@ const handleChange = (e) => {
 
   //メッセージ送信
   const handleSubmit = (e) => {
+    setIsEmpty(false);
+    setIsRegex(false);
     //SUBMITのデフォルトの遷移動作をブロック
     e.preventDefault();
     //NULLチェック
-    if(!forms.name || !forms.mailAddress || !forms.body) {setIsEmpty(true); return false}else{setIsEmpty(false);}
+    if(!forms.name || !forms.mailAddress || !forms.body) {setIsEmpty(true); return false}
     //メール入力チェック
     const regex = /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    if (!regex.test(forms.mailAddress)) {setIsRegex(true) ;return false}else{setIsRegex(false);}
+    if (!regex.test(forms.mailAddress)) {setIsRegex(true);return false}
+    //Load状態に
+    setIsLoad(true);
     //送信処理
-    SendContact (forms,setIsSuccess,setIsError,props.closeModal)
+    SendContact (forms,setIsSuccess,setIsError,props.closeModal,setIsLoad,setForms)
   }
 
       return ( <>{props.status ? (
@@ -86,7 +91,7 @@ const handleChange = (e) => {
          <div className="contact-form"><div>{Contact.form3}</div><textarea name ={Contact.name3}  className="contact-form-textarea" cols="50" rows="20" placeholder =  {Contact.placeholder3} onChange={handleChange}></textarea></div>
          <div  className="contact-form-submit"><button type="submit">送信</button></div>
        </form>
-       <div className="close" onClick={() => { props.closeModal();setIsRegex(false);setIsEmpty(false);}}>閉じる</div>
+       <div className="close" onClick={() => { props.closeModal();setIsRegex(false);setIsEmpty(false);setForms({name: "",mailAddress: "",body:""});}}>閉じる</div>
         </div></div></div>):(<></>)}
         
         {isSuccess ?  (
@@ -104,15 +109,11 @@ const handleChange = (e) => {
         <div className="error">送信エラーが発生しました。<br />時間を置いて改めて送信してください。</div>
         <div className="close" onClick={() => { setIsError(false);}}>閉じる</div>
         </div></div></div>):(<></>)}
+
+        {isLoad ? (
+        <div className="overlay4">
+        <ReactLoading type="spin" color="#fff" />
+        </div>):(<></>)}
         </>
         );
-      
       }
-
-
- 
-
-
-
-
-    

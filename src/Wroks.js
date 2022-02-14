@@ -47,8 +47,8 @@ const ModalItems = (props) => {
                 <tr><td className="modal_td modal_left modal_subtitle"><h3><span className="modal_subtitle-h3">{Works.items[props.valueStatus].workperiod_title}</span><span className="modal_subtitle-small modal_subtitle-gray">{Works.items[props.valueStatus].workperiod_title_eng}</span></h3></td></tr>
                 <tr><td className="modal_td modal_right modal_value"><span className="modal_discription">{Works.items[props.valueStatus].workperiod_value}</span></td></tr>
                 <tr><td className="modal_td modal_left modal_subtitle"><h3><span className="modal_subtitle-h3">{Works.items[props.valueStatus].link_title}</span><span className="modal_subtitle-small modal_subtitle-gray">{Works.items[props.valueStatus].link_title_eng}</span></h3></td></tr>
-                <tr><td className="modal_td modal_right modal_value"><a className="modal_discription" href={Works.items[props.valueStatus].link_value} target={Works.items[props.valueStatus].link_target}>{Works.items[props.valueStatus].link_value}</a>
-                <br /><a href={Works.items[props.valueStatus].git_value} target={Works.items[props.valueStatus].git_target}>{Works.items[props.valueStatus].git_value}</a></td></tr>
+                <tr><td className="modal_td modal_right modal_value"><a className="modal_discription" href={Works.items[props.valueStatus].link_value} target={Works.items[props.valueStatus].link_target}>Web Site</a>
+                <br /><a href={Works.items[props.valueStatus].git_value} target={Works.items[props.valueStatus].git_target}>Github</a></td></tr>
                 </td>
                 </tr>
                 </td>

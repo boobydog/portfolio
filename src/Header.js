@@ -24,14 +24,14 @@ export const TitleImage = () => {
 
 export const HumburgereMenu = () =>{
 
-    const menuItems = Header.menu.map((item) =><li class="nav_item"><a className="menu-text gray" href={item.link}  key={item.id}>{item.name}</a></li>);
+    const menuItems = Header.menu.map((item) =><li key={item.id} className="nav_item"><a className="menu-text gray" href={item.link}  >{item.name}</a></li>);
 
-    return (<div class="humbmenu">
-    <div class="nav">
-      <input id="drawer_input" class="drawer_hidden" type="checkbox" />
-      <label for="drawer_input" class="drawer_open"><span></span></label>
-      <nav class="nav_content">
-          <ul class="nav_list">
+    return (<div className="humbmenu">
+    <div className="nav">
+      <input id="drawer_input" className="drawer_hidden" type="checkbox" />
+      <label htmlFor="drawer_input" className="drawer_open"><span></span></label>
+      <nav className="nav_content">
+          <ul className="nav_list">
           <a className="menu-text black bold" href={Header.link}>{Header.title}</a>
           {menuItems}
           </ul>

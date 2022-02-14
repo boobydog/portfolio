@@ -18,9 +18,9 @@
                  "workperiod_value":"2週間",
                  "link_title":"リンク",
                  "link_title_eng":"Link",
-                 "link_value":"http://localhost:3000/",
+                 "link_value":"https://hikoportfolio.herokuapp.com",
                  "link_target":"_blank",
-                 "git_value":"https://github.com/",
+                 "git_value":"https://github.com/boobydog/portfolio",
                  "git_target":"_blank"
                 },
                 {"id":1,
@@ -38,8 +38,10 @@
                  "workperiod_value":"5日",
                  "link_title":"リンク",
                  "link_title_eng":"Link",
-                 "link_value":"https://github.com/",
-                 "link_target":"_blank"
+                 "link_value":"https://hikoportfolio.herokuapp.com",
+                 "link_target":"_blank",
+                 "git_value":"https://github.com/boobydog/portfolio",
+                 "git_target":"_blank"
                 }
             ]
 }

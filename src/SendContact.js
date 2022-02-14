@@ -1,4 +1,3 @@
-import React,  {useState, useEffect} from 'react';
 import axios from 'axios';
 
 // export const GetToken = ()=> {
@@ -8,7 +7,7 @@ import axios from 'axios';
 //   .catch((e) =>  {  return e});
 // }
 
- export const SendContact = (e,setIsSuccess,setIsError,closeModal) =>{
+ export const SendContact = (e,setIsSuccess,setIsError,closeModal,setIsLoad,setForms) =>{
    const url = process.env.REACT_APP_CONTACT_API_URL;
    var params = new URLSearchParams();
    params.append('name', e.name);
@@ -17,16 +16,22 @@ import axios from 'axios';
 
     axios.post(url, params)
     .then((res) => {
+      //ロード状態の解除
+      setIsLoad(false);
+      //form内容のリセット
+      setForms({name: "",mailAddress: "",body:""});
       //成功のモーダル表示+問い合わせモーダル非表示
       setIsSuccess(true);closeModal();
-      console.log("Success");
       //一定時間待機後、モーダルを非表示
       setTimeout(() => setIsSuccess(false), 4000);})
     .catch((err) =>  {
-      //エラーのモーダル表示+問い合わせモーダル非表示
+       //ロード状態の解除
+      setIsLoad(false);
+      //form内容のリセット
+      setForms({name: "",mailAddress: "",body:""});
+       //エラーのモーダル表示+問い合わせモーダル非表示
       setIsError(true);
       closeModal();
-      console.log("Error");
       //一定時間待機後、モーダルを非表示
       setTimeout(() => setIsError(false), 4000);});
 
