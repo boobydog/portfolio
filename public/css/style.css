@@ -85,7 +85,7 @@ position: fixed;
 .side-menu{
     z-index:1;
     background-color:rgba(255, 255, 255, 0);
-    margin:30% 0% 0% 78%;
+    margin:27% 0% 0% 78%;
     position: fixed;
     transform-origin: right;
     transform: rotate(90deg) translateX(100%);
