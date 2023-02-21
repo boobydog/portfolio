@@ -24,24 +24,23 @@
                  "git_target":"_blank"
                 },
                 {"id":1,
-                 "title":"memo-app",
-                 "thumbnail_image":"./img/works01.png",
-                 "discription_image":"./img/works01.png",
+                 "title":"Checkin",
+                 "thumbnail_image":"./img/works02.png",
+                 "discription_image":"./img/works02.png",
                  "overview_title":"概要",
                  "overview_title_eng":"Overview",
-                 "overview_value":"自身のポートフォリオサイトを作成しました。フロントエンドの作業は経験があまりなく色々と苦戦。デザインを考えることに一番悩みました。Reactを使用して初めて制作したサイトです。",
+                 "overview_value":"ホテルのチェックインアプリを制作致しました。コロナ禍での対面チェックインを減らしたいとの要望を実現するためアイデアを出し合い形にしました。",
                  "uselanguage_title":"使用言語",
                  "uselanguage_title_eng":"Language used",
-                 "uselanguage_value":"HTML/CSS、React",
+                 "uselanguage_value":"Swift",
                  "workperiod_title":"作業期間",
                  "workperiod_title_eng":"Work period",
-                 "workperiod_value":"5日",
+                 "workperiod_value":"3ヶ月",
                  "link_title":"リンク",
                  "link_title_eng":"Link",
-                 "link_value":"https://hikoportfolio.herokuapp.com",
+                 "link_value":"https://yokohama.hostelvillage.com/",
                  "link_target":"_blank",
-                 "git_value":"https://github.com/boobydog/portfolio",
+                 "git_value":"https://github.com/boobydog/CheckinDemo",
                  "git_target":"_blank"
                 }
             ]
-}

@@ -23,7 +23,7 @@
                     {"id":4,
                         "name":"React",
                         "icon":"img/react32px.png",
-                        "rate":2
+                        "rate":3
                     }        
                 ]
             },
@@ -32,7 +32,7 @@
                     {"id":1,
                      "name":"Java",
                      "icon":"img/java32px.png",
-                     "rate":3
+                     "rate":2
                     },
                     {"id":2,
                         "name":"Ruby on Rails",
@@ -93,11 +93,10 @@
                         "rate":3
                     },
                     {"id":4,
-                        "name":"Eclipse",
-                        "icon":"img/eclipse32px.png",
-                        "rate":2
+                        "name":"Swift/SwiftUI",
+                        "icon":"img/swift32px.png",
+                        "rate":3
                     }       
                 ]
             }
         ]
-}
