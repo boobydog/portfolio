@@ -9,7 +9,7 @@
                  "discription_image":"./img/works01.png",
                  "overview_title":"概要",
                  "overview_title_eng":"Overview",
-                 "overview_value":"自身のポートフォリオサイトを作成しました。フロントエンドの作業は経験があまりなく色々と苦戦。デザインを考えることに一番悩みました。Reactを使用して初めて制作したサイトです。",
+                 "overview_value":"自身のポートフォリオサイトを作成しました。デザインを考えることに一番悩みました。Reactを使用して初めて制作したサイトです。",
                  "uselanguage_title":"使用言語",
                  "uselanguage_title_eng":"Language used",
                  "uselanguage_value":"HTML/CSS、React、GAS",
